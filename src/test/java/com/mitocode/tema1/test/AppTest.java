@@ -1,4 +1,7 @@
-package com.mitocode.app;
+package com.mitocode.tema1.test;
+
+import com.mitocode.tema1.Alumno;
+import com.mitocode.tema1.Persona;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -31,8 +34,16 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testAlumno()
     {
-        assertTrue( true );
+    	assertEquals(4, Alumno.sumar(2));
+    }
+    
+    /**
+     * Rigourous Test 2
+     */
+    public void testPersona()
+    {
+    	assertEquals(3, Persona.sumar(2));
     }
 }
